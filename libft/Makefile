@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tom <tom@student.42.fr>                    +#+  +:+       +#+         #
+#    By: tzeck <tzeck@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/06 15:36:01 by tzeck             #+#    #+#              #
-#    Updated: 2021/12/01 17:44:08 by tom              ###   ########.fr        #
+#    Updated: 2022/01/03 15:31:08 by tzeck            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ INCLUDES=./
 
 all: $(NAME)
 
-$(NAME): $(SRCS) libft.h
+$(NAME): $(SRCS) libft.h clean
 	gcc -Wall -Wextra -Werror -I$(INCLUDES) -c $(SRCS)
 	ar rcs $(NAME) $(OBJ)
 

@@ -6,7 +6,7 @@
 #    By: tzeck <tzeck@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/04 20:45:49 by tom               #+#    #+#              #
-#    Updated: 2022/01/01 14:10:30 by tzeck            ###   ########.fr        #
+#    Updated: 2022/01/02 16:02:00 by tzeck            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-all: pre_makes $(NAME) clean
+all: pre_makes $(NAME)
 
 pre_makes:
 	make -C $(LIBFT_PATH)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit_string.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tom <tom@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: tzeck <tzeck@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/06 18:00:47 by tzeck             #+#    #+#             */
-/*   Updated: 2021/11/30 21:00:16 by tom              ###   ########.fr       */
+/*   Updated: 2022/01/03 15:32:11 by tzeck            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@ int	ft_isdigit_string(char *input)
 		if (input[i] < 48 || input[i] > 57)
 		{
 			if (input[i] != '-' && input[i] != '+')
+				return (0);
+			if ((input[i] == '-' || input[i] == '+')
+				&& (input[i + 1] < 48 || input[i + 1] > 57))
 				return (0);
 		}
 		i++;
