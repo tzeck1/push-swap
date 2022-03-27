@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_input.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tzeck <tzeck@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tom <tom@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 23:50:15 by tzeck             #+#    #+#             */
-/*   Updated: 2022/01/03 20:57:38 by tzeck            ###   ########.fr       */
+/*   Updated: 2022/03/27 20:17:02 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,6 @@ long	check_error(char **split_input, int i, int *inval_input, t_stack *stack)
 		return (0);
 	}
 	delete_split(split_input);
-	check_for_dup(n, stack);
 	return (n);
 }
 
